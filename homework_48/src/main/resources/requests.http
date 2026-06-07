@@ -1,0 +1,41 @@
+POST localhost/api/v1/users
+Content-Type: application/json
+
+{
+  "lastName": "Sidikov",
+  "email": "sidikov@gmail.com",
+  "password": "qwerty007",
+  "age": -100
+}
+
+###
+
+GET localhost/api/v1/users/6
+
+###
+
+POST localhost/api/v1/orders
+Content-Type: application/json
+
+{
+  "productName": "Laptop",
+  "count": 2,
+  "price": 89999.99,
+  "deliveryAddress": "Kazan, Pushkina 1"
+}
+
+###
+
+POST localhost/api/v1/orders
+Content-Type: application/json
+
+{
+  "productName": "",
+  "count": 0,
+  "price": -10,
+  "deliveryAddress": ""
+}
+
+###
+
+GET localhost/api/v1/orders/1

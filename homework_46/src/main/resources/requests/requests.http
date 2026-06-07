@@ -1,0 +1,17 @@
+GET localhost/api/v1/accounts
+
+###
+
+POST localhost/api/v1/accounts
+Content-Type: application/json
+
+{
+  "firstName": "Vladislav",
+  "lastName": "Golovin",
+  "email": "vsgolovin96@gmail.com",
+  "password": "qwerty123"
+}
+
+###
+
+GET localhost/api/v1/accounts/4
